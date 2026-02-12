@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portofolio Rossyada Adly</title>
+    <meta name="description" content="Portofolio Rossyada Adly - Mahasiswa Informatika Unsil" />
+    <meta name="author" content="Rossyada Adly" />
+    <link rel="icon" href="/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" id="navbar">
+      <div class="container nav-inner">
+        <a href="#hero" class="logo"><span class="text-gradient">Rossyada</span> Adly</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">&#9776;</button>
+      </div>
+      <div class="mobile-menu glass" id="mobileMenu">
+        <a href="#hero" onclick="closeMobile()">Beranda</a>
+        <a href="#about" onclick="closeMobile()">Tentang</a>
+        <a href="#skills" onclick="closeMobile()">Keahlian</a>
+        <a href="#projects" onclick="closeMobile()">Proyek</a>
+        <a href="#contact" onclick="closeMobile()">Kontak</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-label">Selamat Datang di Portofolio Saya</p>
+        <h1>Rossyada <span class="text-gradient">Adly</span></h1>
+        <p>Mahasiswa Aktif Informatika Universitas Siliwangi — Berfokus pada Web Development dengan Passion untuk Menciptakan Pengalaman Digital yang Menarik.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">Lihat Proyek</a>
+          <a href="#contact" class="btn-outline">Hubungi Saya</a>
+        </div>
+        <div class="scroll-down">
+          <a href="#about">&#8595;</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-label">Tentang Saya</p>
+        <h2 class="section-title">Mengenal Lebih <span class="text-gradient">Dekat</span></h2>
+        <p class="about-text">
+          Halo! Saya Rossyada Adly, mahasiswa aktif Program Studi Informatika di Universitas Siliwangi. Memiliki antusiasme tinggi dalam dunia Web Development, saya terus mengasah kemampuan untuk membangun website yang tidak hanya
+          fungsional, tetapi juga modern dan menarik secara visual.
+        </p>
+        <div class="about-grid">
+          <div class="about-card fade-in">
+            <div class="about-icon">&#60;/&#62;</div>
+            <h3>HTML</h3>
+            <p>Membangun struktur halaman web yang semantik, terorganisir, dan mengikuti standar terkini.</p>
+          </div>
+          <div class="about-card fade-in">
+            <div class="about-icon">&#127912;</div>
+            <h3>CSS</h3>
+            <p>Mendesain tampilan web yang menarik, responsif, dan memberikan pengalaman pengguna yang optimal.</p>
+          </div>
+          <div class="about-card fade-in">
+            <div class="about-icon">&#9889;</div>
+            <h3>JavaScript</h3>
+            <p>Menambahkan interaktivitas dinamis dan logika programming untuk pengalaman web yang lebih engaging.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-label">Keahlian</p>
+        <h2 class="section-title">Tech <span class="text-gradient">Stack</span></h2>
+        <div class="skills-list">
+          <div class="skill-item fade-in">
+            <div class="skill-header">
+              <span class="skill-name">HTML</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="85"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-header">
+              <span class="skill-name">CSS</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="80"></div></div>
+          </div>
+          <div class="skill-item fade-in">
+            <div class="skill-header">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" data-level="75"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-label">Proyek</p>
+        <h2 class="section-title">Karya <span class="text-gradient">Terbaik</span></h2>
+        <div class="project-card fade-in">
+          <h3>Website Alokasi Memori</h3>
+          <p>Aplikasi web interaktif untuk simulasi alokasi memori yang membantu memahami konsep manajemen memori dalam sistem operasi dengan visualisasi yang jelas dan intuitif.</p>
+          <div class="project-tags">
+            <span class="project-tag">HTML</span>
+            <span class="project-tag">CSS</span>
+            <span class="project-tag">JavaScript</span>
+          </div>
+          <a href="https://alloc.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link"> &#128279; Lihat Demo </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <p class="section-label">Kontak</p>
+        <h2 class="section-title">Mari <span class="text-gradient">Terhubung</span></h2>
+        <div class="contact-grid">
+          <div class="contact-info fade-in">
+            <p>Tertarik untuk berkolaborasi atau memiliki pertanyaan seputar web development? Jangan ragu untuk menghubungi saya melalui formulir di samping atau informasi kontak yang tersedia.</p>
+            <div class="contact-item">
+              <div class="contact-icon">&#128205;</div>
+              <span>Tasikmalaya, Jawa Barat, Indonesia</span>
+            </div>
+          </div>
+          <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Nama Lengkap" required />
+            <input type="email" placeholder="Alamat Email" required />
+            <textarea placeholder="Tulis pesan Anda di sini..." required></textarea>
+            <button type="submit" class="btn-primary">&#9993; Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; 2025 <span class="text-gradient" style="font-family: &quot;Space Grotesk&quot;, sans-serif; font-weight: 600">Rossyada Adly</span>. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
